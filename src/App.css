@@ -38,22 +38,34 @@ p {
 }
 
 .app .search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    padding: 1rem;
+    padding: 2rem;
 }
 
-.app input {
+.app .search-text {
     padding: .7rem 1.5rem;
     font-size: 1.2rem;
-    border-radius: 25px;
+    border-radius: 25px 0 0 25px;
     outline: none;
-    border: 1px solid rgba(255, 255, 255, 0.8);
     background: rgba(255, 255, 255, 0.1);  
-    color: #f8f8f8; 
+    color: rgba(255,255,255, 0.8);
+    border: none;
+}
+
+.app .search-submit {
+    color: rgba(255,255,255, 0.8);
+    font-size: 1.2rem;
+    padding: .7rem 1.5rem;
+    background: rgba(255, 255, 255, 0.1); 
+    border-radius: 0 25px 25px 0;
+    border: none;
 }
 
 ::placeholder {
-    color: #f8f8f8;
+    color: rgba(255,255,255, 0.8);
 }
 
 .container {
