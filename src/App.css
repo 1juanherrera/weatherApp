@@ -48,20 +48,18 @@ p {
 .app .search-text {
     padding: .7rem 1.5rem;
     font-size: 1.2rem;
-    border-radius: 25px 0 0 25px;
+    border-radius: 25px;
     outline: none;
     background: rgba(255, 255, 255, 0.1);  
     color: rgba(255,255,255, 0.8);
     border: none;
+    width: 25rem;
 }
 
-.app .search-submit {
-    color: rgba(255,255,255, 0.8);
-    font-size: 1.2rem;
-    padding: .7rem 1.5rem;
-    background: rgba(255, 255, 255, 0.1); 
-    border-radius: 0 25px 25px 0;
-    border: none;
+@media (max-width: 480px) {
+    .app .search-text {
+        width: 100%;
+    }
 }
 
 ::placeholder {
@@ -117,3 +115,4 @@ p {
         font-size: 1.2rem;
     }
 }
+

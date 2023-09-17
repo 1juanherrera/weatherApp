@@ -36,7 +36,6 @@ function App() {
         className='search-text'
         placeholder='Enter location'
         type='text' />
-        <input type='submit' placeholder='search' onSubmit={(e) => searchLocation(e)} className='search-submit' />
       </form>
       <div className='container'>
         <div className='top'>
